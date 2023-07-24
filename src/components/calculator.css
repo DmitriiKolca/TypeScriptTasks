@@ -1,0 +1,116 @@
+.mainContainer {
+    width: 500px;
+    height: 100%;
+}
+
+.unitContainer {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+
+    box-sizing: border-box;
+
+    margin-bottom: 5px;
+
+    border: 1px solid blue;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 50px 20px 50px 50px 50px;
+    grid-gap: 5px;
+
+    align-items: center;
+    justify-items: center;
+    }
+
+
+.input {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.input:hover {
+    border: 4px solid #d0d0d0;
+}
+
+.countPlus {
+    width: 100%;
+    height: 100%;
+
+    background-color: greenyellow;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    user-select: none;
+
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.countPlus:hover {
+    background-color: #8ccc28;
+}
+
+.countMinus {
+    width: 100%;
+    height: 100%;
+
+    background-color: greenyellow;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    user-select: none;
+
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.countMinus:hover {
+    background-color: #8ccc28;
+}
+
+.summ {
+    width: 100%;
+    height: 100%;
+
+    background-color: silver;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    pointer-events: none;
+    user-select: none;
+
+    grid-column: 1/4;
+    grid-row: 4;
+}
+
+.separator {
+    height: 3px;
+    width: 80%;
+    background-color: #333333;
+    border-radius: 3px;
+
+    grid-column: 1/4;
+    grid-row: 3;
+}
